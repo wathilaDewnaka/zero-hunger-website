@@ -21,5 +21,5 @@ setTimeout(function() {
 
 // Setting a timeout function to run after 5000 milliseconds (5 seconds)
 setTimeout(function(){
-        window.location.href = "../Home/home.html" // Redirect to home page
+        window.location.href = "Home/home.html" // Redirect to home page
 },5000)
