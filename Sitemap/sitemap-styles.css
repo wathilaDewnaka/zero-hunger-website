@@ -1,0 +1,74 @@
+@keyframes image {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+body{
+    background: #f3f4f5 ;
+    background-image: url("sitemap-img/bg.png");
+    background-image: url("sitemap-img/bg.png"), linear-gradient(to bottom, #f3f4f5 0%, #f3f4f5 50%, #29313e 50%,#29313e 100%);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    animation-name: image;
+    animation-duration: 2.8s;
+    overflow-x: hidden;
+}
+
+
+a:is(:hover, :focus) rect{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    fill: antiquewhite;
+}
+
+a:is(:hover, :focus) path{
+    stroke: firebrick;
+    stroke-width: 3px;
+    transition: all 1s ease-in-out;
+}
+
+a:is(:hover, :focus) line{
+    stroke: firebrick;
+    stroke-width: 3px;
+    transition: all 1s ease-in-out;
+}
+
+.site-map{
+    position: relative;
+    top: 100px;
+    left: 20px;
+}
+
+line {
+    fill: none;
+    stroke: #000;
+    transition: all 1s ease-in-out;
+    stroke-width: 2px;
+}
+
+path{
+    stroke-width: 3px;
+    transition: all 1s ease-in-out;
+    stroke: black;
+}
+
+text{
+    font-size: 28px;
+    font-family: Poppins;
+    font-weight: 700;
+    fill: black;
+    stroke: #000;
+    z-index: 999;
+
+}
+
+rect{
+    fill: white;
+    transition: all 1s ease-in-out;
+    opacity: 0.8;
+}
+
+text.home {
+    font-size: 48px;
+    fill: #1D890C;
+}

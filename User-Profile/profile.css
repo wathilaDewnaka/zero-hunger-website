@@ -1,0 +1,253 @@
+/* Setting basic styles for the body */
+body {
+    margin: 0;
+    margin-top: 150px; /* Top margin for body */
+    padding: 0;
+    font-family: Poppins; /* Setting font family for the body */
+    height: 100%;
+}
+
+
+.pageeditor{
+    text-align: center;
+}
+/* Setting styles for headings */
+h3,
+h2,
+h1 {
+    font-family: Poppins; /* Setting font family for headings */
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* Styling for the question container */
+.question {
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    font-family: Poppins;
+}
+
+/* Styles for profile details */
+#profile-details {
+    margin-bottom: 20px;
+}
+
+/* Styling for form buttons */
+button.form-button {
+    background: #009578;
+    position: relative;
+    left: 40%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0 24px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px;
+    place-items: center;
+    margin-top: 10px;
+    transition: all 160ms ease-in;
+    color: rgb(226,226,226);
+}
+
+/* Button hover effect */
+button.form-button:hover {
+    background: #008168;
+}
+
+/* Button active state */
+button.form-button:active {
+    background: #006e58;
+    transform: scale(.95);
+}
+
+/* Progress Bar */
+.progress {
+    text-align: center;
+}
+/* Styling for progress bar container */
+#progress-bar {
+    margin: auto;
+    width: 30%;
+    height: 10px;
+    background-color: navajowhite;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px;
+}
+
+/* Styling for progress indicator */
+#progress-indicator {
+    align-content: center;
+    height: 100%;
+    transition: all 1.2s ease-in-out;
+    background-color: #4CAF50;
+    border-radius: 10px;
+}
+
+/* Styling for custom fields div tag */
+.custom-field {
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* Styling for select input within custom field */
+.custom-field select {
+    font-family: Poppins;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px solid #ddd;
+    width: 250px;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+/* Styling for text input within custom field */
+.custom-field input {
+    border: none;
+    appearance: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+    background: none;
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px solid #ddd;
+    width: 40%;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+/* Styling for placeholder text within custom field */
+.custom-field .placeholder {
+    position: absolute;
+    left: 10px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    cursor: text;
+    color: #aaa;
+    transition:
+            top 0.3s ease,
+            font-size 0.3s ease,
+            color 0.3s ease;
+}
+
+/* Styling for placeholder text within custom field */
+.custom-field input + .placeholder,
+.custom-field select + .placeholder{
+    padding: 0 5px;
+}
+
+/* Styling for valid input state within custom field */
+.custom-field input:valid,
+.custom-field input:focus,
+.custom-field select:valid,
+.custom-field select:focus {
+    box-shadow: rgba(0,0,0,0.19) 0px 5px 5px, rgba(0,0,0,0.23) 0px 1px 1px;
+    border-color: #222;
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+/* Styling for placeholder text when input is valid or focused */
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder {
+    background: #f9f9f9;
+    top: 10px;
+    font-size: 10px;
+    color: #222;
+}
+
+/* Styling for placeholder text when select input is valid or focused */
+.custom-field select:valid + .placeholder,
+.custom-field select:focus + .placeholder {
+    background: #f9f9f9;
+    top: 10px;
+    font-size: 10px;
+    color: #222;
+}
+
+/* Styling for required field message */
+.required {
+    font-family: Poppins;
+    font-size: 11px;
+    color: red;
+    margin-top: 5px;
+    margin-left: 20px;
+    cursor: auto;
+    opacity: 0;
+    transition: .5s;
+}
+
+/* Styling to capitalize text */
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* Styling for clean box containers */
+.clean-box {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    box-shadow: rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px;
+}
+
+/* Styling for horizontal rule */
+hr {
+    height: 4px;
+    border-radius: 10px;
+    border-color: black;
+    background: black;
+}
+
+/* Styling for labels */
+label {
+    font-family: Poppins;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .custom-field input,
+    .custom-field select {
+        width: 80%;
+    }
+    .custom-field .placeholder {
+        top: calc(27% + 10px);
+        transform: translateY(-100%);
+        left: 15px;
+    }
+
+    button.form-button {
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .custom-field {
+        padding: 10px;
+    }
+}

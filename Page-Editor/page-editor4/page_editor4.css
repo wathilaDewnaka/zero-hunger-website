@@ -1,0 +1,136 @@
+body{
+    background-color: #f9e4bc;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+.content{
+    text-align: center;
+}
+
+hr{
+    border: 1px solid black;
+    margin: 2%;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 3;
+}
+
+.nav-links li {
+    display: inline;
+    padding-right: 50px;
+    color: #000000B0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.nav-links li a {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #1D890C;
+    font-weight: 700;
+}
+
+.nav-links {
+    padding-top: 12px;
+    padding-left: 100px;
+}
+
+.active-nav-link a {
+    color: #1D890C;
+    font-weight: 700;
+}
+
+.nav-link-container {
+    display: flex;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+    box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.2);
+}
+
+.nav-link-container p{
+    padding-top: 10px;
+    margin-left: 55%;
+    font-size: larger;
+}
+
+.leaf-logo {
+    width: 20px;
+    height: 35px;
+    padding-top: 10px;
+}
+
+.site-name {
+    color: #000000;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    width: 202px;
+    padding: 25px 0px 20px 60px;
+}
+
+.details, .editor-details{
+    width: 50%;
+    margin: auto;
+}
+.main-banner{
+    height: 470px;
+}
+
+.editor-photo img{
+    height: 300px;
+    width: auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-container img{
+    height: 40px;
+    width: auto;
+    padding: 10px;
+}
+
+@media (max-width: 1024px) {
+    .nav-links li {
+        display: inline;
+        padding-right: 18px;
+        font-size: 12px;
+    }
+
+    .nav-links {
+        padding-top: 7px;
+        padding-left: 60px;
+    }
+
+    .site-name {
+        font-size: 17px;
+        width: 110px;
+        padding: 20px 0px 15px 42px;
+    }
+
+    .leaf-logo {
+        padding-top: 8px;
+        width: 15px;
+        height: 22px;
+    }
+
+
+    .nav-link-container p{
+        font-size: 12px;
+    }
+
+}    
+
+@media (max-width: 1024px){
+    
+}

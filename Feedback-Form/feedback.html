@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="../Others/nav-bar-and-footer.css">
+
+    <link rel="stylesheet" href="feedback-style.css">
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to the favicon -->
+    <link rel="icon" type="image/x-icon" href="../Others/img/leaf-logo.png">
+    <!-- Link to the Google Fonts stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+
+        <!-- Navigation Link Container -->
+        <div class="nav-link-container">
+            <!-- Site Name -->
+            <div class="site-name">
+                Zero Hunger
+            </div>
+
+            <!-- Logo -->
+            <img src="../Others/img/leaf-logo.png" alt="leaf-logo" class="leaf-logo">
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+              <li><a href="../Home/home.html">Home</a></li>
+              <li><a href="../Content-Page/content-page.html">Content Page</a></li>
+              <li class="active-nav-link"><a href="../Feedback-Form/feedback.html">Form</a></li>
+              <li><a href="../Gallery/gallery.html">Gallery</a></li>
+              <li><a href="../Shop/shop.html">Shop</a></li>
+              <li><a href="../User-Profile/profile.html">User Profile</a></li>
+              <li><a href="../Sitemap/sitemap.html">Site Map</a></li>
+              <li><a href="../Team/team.html">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="form-container">
+
+        <div class="form-topic">How did we Do ?</div>
+    
+        <div class="input-container">
+          <div class="form-discription">Enter your name : </div>
+          <input type="text" placeholder=" Type your name here: " id="name-id">
+        </div>
+        <div class="alert-msg-name">*Please enter your name</div>
+    
+        <div class="input-container">
+          <div class="form-discription">Enter your email : </div>
+          <input type="text" placeholder=" Type your email here: " id="email-id">
+        </div>
+        <div class="alert-msg-email" id="emai-alert">*Please enter you email</div>
+    
+        <div class="form-discription-one">
+          How satisfied were you with our website today? Choose from 0 to 10, 
+          where 0 is extremely dissatisfied and 10 is extremely satisfied.
+        </div>
+    
+        <div class="rating-container">
+    
+          <form action="#">
+    
+            <input type="radio" name="rating" id="num0" value="0">
+            <label for="num0">0</label>
+    
+            <input type="radio" name="rating" id="num1" value="1">
+            <label for="num1">1</label>
+    
+            <input type="radio" name="rating" id="num2" value="2">
+            <label for="num2">2</label>
+    
+            <input type="radio" name="rating" id="num3" value="3">
+            <label for="num3">3</label>
+    
+            <input type="radio" name="rating" id="num4" value="4">
+            <label for="num4">4</label>
+    
+            <input type="radio" name="rating" id="num5" value="5">
+            <label for="num5">5</label>
+    
+            <input type="radio" name="rating" id="num6" value="6">
+            <label for="num6">6</label>
+    
+            <input type="radio" name="rating" id="num7" value="7">
+            <label for="num7">7</label>
+    
+            <input type="radio" name="rating" id="num8" value="8">
+            <label for="num8">8</label>
+    
+            <input type="radio" name="rating" id="num9" value="9">
+            <label for="num9">9</label>
+    
+            <input type="radio" name="rating" id="num10" value="10">
+            <label for="num10">10</label>
+    
+          </form>
+    
+          <div class="alert-msg-one">*Please choose a rating</div>
+    
+          <div class="form-discription">
+            Please could you tell us your reasons for giving this rating?
+          </div>
+    
+          <textarea name="user-feedback" id="feedbackID" cols="30" rows="10"></textarea>
+          <div class="alert-msg">*Please provide reasons for your rating </div>
+    
+          
+          <div class="form-discription">
+            Would you like to reccommend out service to others ?
+          </div>
+    
+          <input type="radio" name="reccommend" value="Yes" id="reccommend-yes">
+          <label for="reccommend-yes">Yes</label>
+          
+    
+          <input type="radio" name="reccommend" value="no" id="reccommend-no">
+          <label for="reccommend-no">No</label>
+          
+          <div class="select-one-service display-none">*Select one</div>
+    
+    
+          <div class="form-discription">
+            Would you like to recieve newsletters ?
+          </div>
+    
+          <input type="radio" name="select-one" id="select-one-yes" value="Yes">
+          <label for="select-one-yes">Yes</label>
+          
+    
+          <input type="radio" name="select-one" id="select-one-no" value="No">
+          <label for="select-one-no">No</label>
+    
+          <div class="select-one-newsletter display-none">*Select one</div>
+    
+          <div class="form-discription">
+            How did you want to complete this task today? (optional)
+          </div>
+    
+          <select name="task_completion" class="task_completion">
+            <option value="option">Select an option</option>
+            <option value="Phone">Phone</option>
+            <option value="Website">Website</option>
+            <option value="Webchat">Webchat</option>
+            <option value="Social media">Social media</option>
+            <option value="Email">Email</option>
+          </select>
+    
+          <div class="form-discription">
+            If you had to complete this task again, how would you prefer to do it? (optional)
+          </div>
+    
+          <select name="task_preference" class="task_preference">
+            <option value="option">Select an option</option>
+            <option value="Phone">Phone</option>
+            <option value="Website">Website</option>
+            <option value="Webchat">Webchat</option>
+            <option value="Social media">Social media</option>
+            <option value="Email">Email</option>
+          </select>
+    
+          <button class="form-btn" onclick="submitBtn()" id="submit-btn">Submit</button>
+          <button class="form-btn" id="preview-btn" onclick="previewBtn()">Preview</button>
+          
+        </div>
+    </div>
+    
+    <div class="submition-complete">
+        <img src="feedback-img/right-img.png" alt="">
+        <div class="submition-complete-thank">Thank you</div>
+        <div class="submition-complete-msg">Your submission has sent</div>
+    </div>
+    
+    
+    <div class="preview-container display-none">
+    
+        <div class="name-pre preview-text">1. Name : </div>
+        <div class="emai-pre preview-text">2. Email :</div>
+    
+        <div class="satisfaction-pre preview-text">3. How satisfied were you with our website today? Choose from 0 to 10, 
+          where 0 is extremely dissatisfied and 10 is extremely satisfied.
+        </div>
+        <div class="satisfaction-pre-ans preview-ans">Not Mention</div>
+    
+        <div class="rating-dis-pre preview-text">
+          4. Please could you tell us your reasons for giving this rating?
+        </div>
+        <div class="rating-dis-pre-ans preview-ans">Not Mention</div>
+    
+        <div class="service-pre preview-text">
+          5. Would you like to reccommend out service to others ?
+        </div>
+        <div class="service-pre-ans preview-ans">Not Mention</div>
+    
+        <div class="newsletter-pre preview-text">
+          6. Would you like to recieve newsletters ?
+        </div>
+        <div class="newsletter-pre-ans preview-ans">Not Mention</div>
+    
+        <div class="complete-pre preview-text">
+          7. How did you want to complete this task today? 
+        </div>
+        <div class="complete-pre-ans preview-ans">Not Mention</div>
+    
+        <div class="complete-again-pre preview-text">
+          8. If you had to complete this task again, how would you prefer to do it? 
+        </div>
+        <div class="complete-again-pre-ans preview-ans">Not Mention</div>
+    
+        <div>
+          <button class="form-btn" onclick="backBtn()">Back</button>
+        </div>
+    </div>
+
+<!-- Footer -->
+<div class="footer-container">
+    <!-- Left Section -->
+    <div class="footer-section-left">
+        <div class="footer-title"> Get connected</div>
+
+        <div class="footer-description">
+            Join the conversation on social, and
+            stay connected with our latest events
+            and partners around the world
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-media-logo-container">
+            <img src="../Others/img/twitter-logo.png" alt="twitter-logo" class="socialimage">
+            <img src="../Others/img/facebook-logo.png" alt="fb-logo" class="socialimage">
+            <img src="../Others/img/insta-logo.png" alt="insta-logo" class="socialimage">
+            <img src="../Others/img/youtube-logo.png" alt="youtube-logo" class="socialimage">
+        </div>
+    </div>
+
+    <!-- Middle Section -->
+    <div class="footer-section-middle">
+        <div class="footer-title"> Contact</div>
+
+        <div class="footer-description" id="footer-description-id-1">
+            <img src="../Others/img/address-logo.png" alt="address" class="addressimage">
+            <div>
+                213/8/9, Mount Lavinia Road,<br>
+                Sri Lanka
+            </div>
+        </div>
+
+        <div class="footer-description" id="footer-description-id-2">
+            <img src="../Others/img/msg-logo.png" alt="msg-logo" class="addressimage">
+            <div>zerohunger@gmail.com</div>
+        </div>
+
+        <div class="footer-description" id="footer-description-id-3">
+            <img src="../Others/img/call-logo.png" alt="call-logo" class="addressimage">
+            <div>0785864540 | 0770891499</div>
+        </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="footer-section-right">
+        <div class="footer-title"> Stay informed</div>
+
+        <div class="footer-description">
+            Subscribe to our newsletter to receive
+            updates of latest news and events.
+        </div>
+
+        <!-- Subscription Form -->
+        <form action="http://localhost" class="form-details">
+            <input id="subscribe-newsletter" style="box-shadow: none;" type="email" name="subscribe" required>
+            <span class="subscribe-placeholder">Email :</span>
+            <button class="sub-button" type="submit">SUBSCRIBE</button>
+        </form>
+    </div>
+</div>
+
+<script src="feedback.js"></script>
+
+</body>
+</html>

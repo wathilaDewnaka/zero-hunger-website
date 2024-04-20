@@ -1,0 +1,44 @@
+/* Adjusting height and centering content on gallery and content */
+.content-page,.gallery{
+    text-align: center;
+    font-size: larger;
+    line-height: 40px;
+
+}
+
+/* Adjusting size of contents */
+.contents{
+    margin: auto;
+    width: 80%;
+}
+
+/* Setting all h3 tags to centre */
+h3{
+    text-align: center;
+}
+
+/* Adjusting margin of images section*/
+.images{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Adjusing margin and size of images */
+.images img{
+    margin-top: 20px;
+    width: 250px;
+    height: 200px;
+}
+
+/* Adding gallery to flex */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* Adjusting size of main banner */
+.main-banner{
+    width: 100%;
+    height: 565px;
+}

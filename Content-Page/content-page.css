@@ -1,0 +1,69 @@
+/* Adjusting margin and text of content */
+.content-page{
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Adjusting width and sizes of contents */
+.content-1, .content-2, .content-3, .content-4{
+    width: 85%;
+    border-radius: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: 100%;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+    padding: 50px 50px 50px 50px;
+}
+
+/* Adjjusting position when hover */
+.content-1:hover,.content-2:hover,.content-3:hover,.content-4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Adjusting size of banner image */
+.banner-img{
+    margin-top: 40px;
+    width: 100%;
+    height: 565px;
+}
+
+/* Setting text to centere in h3 */
+h3{
+    text-align: center;
+}
+
+
+/* Decorationg a tag in discover btm */
+.discover-btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+
+/* Decorating discover btn */
+.discover-btn{
+    background-color: #CE7C02;
+    width: 120px;
+    padding: 10px 13px 10px 13px;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: 0.5s;
+    margin: 30px auto 40px auto;
+} 
+
+/* Decorating discover btn hover */
+.discover-btn:hover{
+    background-color: #e0a142;
+}
+
+.main-banner{
+    height: 470px;
+}

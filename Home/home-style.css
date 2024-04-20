@@ -1,0 +1,355 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins;
+    height: 100%;
+}
+
+
+/* Home page section one */
+
+
+.home-page-container{
+    margin-top: 84px;
+}
+
+.home-title{
+    font-family: Poppins;
+    font-size: 55px;
+    font-weight: 700;
+    position: absolute;
+    z-index: 1;
+    color: #FFFFFF;
+    padding: 90px 0px 0px 55px;
+    width: 490px;
+}
+
+.home-description{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+    color: #fdfffd;
+    padding: 255px 0px 0px 55px;
+    width: 600px;
+}
+
+
+.discover-btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.discover-btn{
+    background-color: #CE7C02;
+    width: 120px;
+    padding: 10px 13px 10px 25px;
+    border-radius: 20px;
+    font-size: 15px;
+} 
+
+.dicover-btn-container{
+    position: absolute;
+    z-index: 1;
+    padding: 350px 0px 0px 55px;
+}
+
+
+.discover-btn:hover{
+    background-color: #704a10;
+}
+
+
+.nigeria{
+    color: #21B709;
+    
+}
+
+
+/* home page section 2 */
+.home-page-section-two{
+    margin-top: 60px;
+}
+
+.sub-topic{
+    text-align: center;
+    color: #6D6D6D;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.bold-sub-topic{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.content-holder{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    margin-top: 65px;
+    padding-left: 140px;
+    padding-right: 110px;
+}
+
+.content-container{
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.3s;
+}
+
+.content-title{
+    font-weight: 600;
+    font-size: 23px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.content-description{
+    color: #575454;
+    font-weight: 400;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.content-image{
+    height:175px;
+    width:195px;
+}
+
+.content-container a{
+    cursor: pointer;
+}
+
+
+
+.content-container:hover{
+    border: 1px solid rgba(100, 100, 100, 0.2);
+    box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.2);
+}
+
+/* 2xl */
+@media (max-width: 1536px){
+
+}
+
+
+/* xl */
+@media (max-width: 1280px){
+    h1{
+        color:orange;
+    }
+
+    /* responsive nav bar*/
+    .nav-links li{
+        display: inline;
+        padding-right: 32px;
+        font-size: 15px;
+        
+    }
+    
+    .nav-links{
+        padding-top: 12px;
+        padding-left: 75px;
+    }
+    
+    
+    .site-name{
+        
+        font-size: 22px;
+        width: 145px;
+        padding: 25px 0px 20px 60px;
+    }
+    
+    .leaf-logo{
+        padding-top: 7px;
+    }
+
+
+    .main-banner{
+        width: 100%;
+        height: 565px;
+    }
+
+
+
+
+    /* Home page section one */
+    .home-title{
+        padding: 60px 0px 0px 55px;
+        width: 490px;
+        font-size: 50px;
+    }
+
+    .home-description{
+        padding: 223px 0px 0px 55px;
+        width: 600px;
+        font-size: 13px;
+    }
+
+
+
+    .discover-btn{
+        width: 105px;
+        padding: 10px 20px 10px 30px;
+        border-radius: 20px;
+        font-size: 13px;
+    } 
+
+    .dicover-btn-container{
+        padding: 285px 0px 0px 55px;
+    }   
+
+
+
+    .content-holder{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 420px;
+        margin-top: 65px;
+        padding-left: 100px;
+    }
+
+
+
+    .footer-container{
+        
+        display: grid;
+        grid-template-columns: 380px 380px 380px;
+        padding-left: 50px;
+    }
+
+}
+
+/* lg */
+@media (max-width: 1024px){
+    
+    /* responsive nav bar*/
+    .nav-links li{
+        display: inline;
+        padding-right: 18px;
+        font-size: 12px;
+        
+    }
+    
+    .nav-links{
+        padding-top: 7px;
+        padding-left: 60px;
+    }
+    
+    
+    .site-name{
+        
+        font-size: 17px;
+        width: 110px;
+        padding: 20px 0px 15px 42px;
+    }
+    
+    .leaf-logo{
+        padding-top: 8px;
+    }
+
+    .leaf-logo{
+        width: 15px;
+        height:22px;
+    }
+
+    .main-banner{
+        height: 382px;
+    }
+
+
+     /* Home page section one */
+     .home-title{
+        padding: 58px 0px 0px 55px;
+        width: 485px;
+        font-size: 42px;
+    }
+
+    .home-description{
+        padding: 192px 0px 0px 55px;
+        width: 500px;
+        font-size: 12px;
+    }
+
+
+
+    .discover-btn{
+        width: 95px;
+        padding: 8x 14px 8px 25px;
+        border-radius: 20px;
+        font-size: 12px;
+    } 
+
+    .dicover-btn-container{
+        padding: 250px 0px 0px 55px;
+    }  
+
+
+
+    .content-holder{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 420px 420px;
+        margin-top: 58px;
+        padding-left: 110px;
+    }
+
+
+
+    .footer-container{
+        
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        padding-left: 35px;
+    }
+}
+
+
+/* md */
+@media (max-width: 768px){
+    .content-holder{
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 420px 420px 420px;
+        margin-top: 58px;
+        padding-left: 100px;
+    }
+
+    .footer-container{
+        
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 300px 300px 300px;
+        padding-left: 80px;
+    }
+}
+
+
+/* sm */
+@media (max-width: 640px){
+ 
+}
+
+/* xs */
+@media (max-width: 475px){
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,249 @@
+@keyframes image {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+body{
+    font-family: Poppins;
+    animation-name: image;
+    animation-duration: 2.8s;
+}
+h2 {
+    color: black;
+    position: relative;
+    padding: 80px 0 20px 0;
+    margin-left: 3%;
+}
+
+.mode-container{
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    z-index: 998;
+}
+
+.font{
+    height: 25px;
+    width: auto;
+    border: 1.8px solid grey;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.font:hover{
+    height: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.bg-color{
+    height: 25px;
+    width: auto;
+    border: 1.8px solid grey;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.bg-color:hover{
+    height: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.left-arrow{
+    position: absolute;
+    height: 50px;
+    width: auto;
+    top: 350px;
+    left: 20px;
+    border-radius: 5px;
+    z-index: 998;
+    opacity: 0.3;
+    transition: all 0.5s ease-in-out;
+}
+
+.left-arrow:hover{
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.right-arrow{
+    position: absolute;
+    height: 50px;
+    width: auto;
+    top: 350px;
+    right: 20px;
+    border-radius: 5px;
+    z-index: 998;
+    opacity: 0.3;
+    transition: all 0.5s ease-in-out;
+}
+
+.right-arrow:hover{
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+p   {text-align: center;
+    position: absolute;
+    margin-left: 50%;
+    font-size: 45px;
+}
+
+#mainImg{
+    height: 400px;
+    width: auto;
+    margin-left: 3%;
+    float: left;
+    margin-bottom: 1%;
+    border: 2px solid grey;
+}
+
+.image-container{
+    clear: left;
+    position: relative;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.gallery {
+    height: 90px;
+    width: auto;
+    transition: all 0.5s ease-in-out;
+    border: 2px solid black;
+    }
+
+.gallery:hover {height: 95px;
+    width: auto;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 1280px){
+    .left-arrow{
+        height: 40px;
+        top: 300px;}
+
+    .right-arrow{
+        height: 40px;
+        top: 300px;}
+
+    #mainImg {
+        height: 300px;
+    }
+
+    p{font-size: 30px;}
+
+    .gallery{
+        height: 75px;
+        padding: 10px 1.5px 10px 1.5px;}
+
+    .gallery:hover{
+        height: 80px;
+        padding: 12.5px 3px 12.5px 3px;
+    }
+}
+
+@media (max-width: 1024px){
+    .left-arrow{
+        height: 28px;
+        top: 270px;}
+
+    .right-arrow{
+        height: 28px;
+        top: 270px;}
+
+    #mainImg {
+        height: 210px;
+    }
+
+    p{font-size: 20px;}
+
+    .gallery{
+        height: 65px;
+        padding: 8px 1.5px 8px 1.5px;}
+
+    .gallery:hover{
+        height: 70px;
+        padding: 9.5px 3px 9.5px 3px;
+    }
+}
+
+@media (max-width: 768px){
+    .left-arrow{
+        height: 40px;
+        top: 350px;}
+
+    .right-arrow{
+        height: 40px;
+        top: 350px;}
+
+    #mainImg {
+        height: 380px;
+        float: none;
+        position: unset;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: unset;
+    }
+
+    p{
+        font-size: 25px;
+        margin-left: unset;
+    }
+
+    .image-container{
+        margin-top: 15%;
+        position: unset;
+    }
+
+    .gallery{
+        height: 50px;
+        padding: 8px 1.5px 8px 1.5px;}
+
+    .gallery:hover{
+        height: 65px;
+        padding: 9.5px 3px 9.5px 3px;
+    }
+}
+
+@media (max-width: 640px){
+    .left-arrow{
+        height: 40px;
+        top: 300px;}
+
+    .right-arrow{
+        height: 40px;
+        top: 300px;}
+
+    #mainImg {
+        height: 280px;
+        float: none;
+        position: unset;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: unset;
+    }
+
+    p{
+        font-size: 20px;
+        margin-left: unset;
+    }
+
+    .image-container{
+        margin-top: 25%;
+        position: unset;
+    }
+
+    .gallery{
+        height: 50px;
+        padding: 8px 1.5px 8px 1.5px;}
+
+    .gallery:hover{
+        height: 65px;
+        padding: 9.5px 3px 9.5px 3px;
+    }
+}

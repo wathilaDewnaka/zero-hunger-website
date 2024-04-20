@@ -1,0 +1,270 @@
+<!-- Creating the html docuement -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Creating relavent meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <!-- Linking external style sheets -->
+    <link rel="stylesheet" href="../Others/nav-bar-and-footer.css">
+    <link rel="stylesheet" href="cart-style.css">
+
+    <!-- Linking the google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="icon" type="image/x-icon" href="../Others/img/leaf-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+    <!-- Creating the document body -->
+    <body>
+
+        <!-- Creating a alert message -->
+	    <div id="prompt" class="prompt">
+            <img id="tick-icon" class="tick-icon" src="image-other/tick.png" alt="">
+            <p id="text-bar" class="text-bar">Item added to shopping cart!</p>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+
+            <!-- Navigation Link Container -->
+            <div class="nav-link-container">
+                <!-- Site Name -->
+                <div class="site-name">
+                    Zero Hunger
+                </div>
+
+                <!-- Logo -->
+                <img src="../Others/img/leaf-logo.png" alt="leaf-logo" class="leaf-logo">
+
+                <!-- Navigation Links -->
+                <ul class="nav-links">
+                    <li><a href="../Home/home.html">Home</a></li>
+                    <li><a href="../Content-Page/content-page.html">Content Page</a></li>
+                    <li><a href="../Feedback-Form/feedback.html">Form</a></li>
+                    <li><a href="../Gallery/gallery.html">Gallery</a></li>
+                    <li class="active-nav-link"><a href="../Shop/shop.html">Shop</a></li>
+                    <li><a href="../User-Profile/profile.html">User Profile</a></li>
+                    <li><a href="../Sitemap/sitemap.html">Site Map</a></li>
+                    <li><a href="../Team/team.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Creating the main container -->
+        <div class="container-main">
+
+            <!-- Creating a section to welcome the user -->
+            <div class="section-one">
+
+                <!-- Showing the welcome message -->
+                <div class="title-image">Welcome to the Shopping Page !</div>
+
+                <div class="description-image">With your support, we can do more. Your donation, no matter how much, will help us
+                    reach more poor communities to feed them and empower them
+                </div>
+                
+                <!-- Showing a banner -->
+                <img src="image-other/banner.jpg" alt="shopping-page-welcome" class="main-banner">
+
+            </div>
+
+
+            <!-- Creating a section consist of products -->
+            <div class="section-two">
+                <!-- Creating a navigaion bar for products -->
+                <div class="product-nav">
+                    <h2 class="main">Product List</h2>
+                    
+                    <!-- Displaying the shopping cart -->
+                    <div class="cartIcon">
+                        <img id="cart-logo" src="image-other/basket.png" alt="" class="cart">
+                        <span id="count-cart" class="count">0</span>
+                    </div>
+                </div>
+            
+                <!-- Creating a container -->
+                <div class="container">
+                    <!-- Displaying the catergories -->
+                    <h2>Catergories</h2>
+                    <div class="catergories">
+                        <!-- Showing a caatergory -->
+                        <div class="catergory">
+                            <a href="#groc">
+                                <div class="product-img">
+                                    <img class="catergory-img" src="image-other/grocery.png" alt="">
+                                </div>
+                                <div class="catergory-info">Grocery</div>
+                            </a>
+                        </div>
+            
+                         <!-- Showing a caatergory -->
+                        <div class="catergory">
+                            <a href="#veg">
+                                <div class="product-img">
+                                    <img class="catergory-img" src="image-other/vegetable.png" alt="">
+                                </div>
+                                <div class="catergory-info">Vegetable</div>
+                            </a>            
+                        </div>
+            
+                         <!-- Showing a caatergory -->
+                        <div class="catergory">
+                            <a href="#meat">
+                                <div class="product-img">
+                                    <img class="catergory-img" src="image-other/meat.png" alt="">
+                                </div>
+                                <div class="catergory-info">Meats</div>
+                            </a>
+                        </div>
+
+                        <!-- Showing a caatergory -->
+                        <div class="catergory">
+                            <a href="#drinks">
+                                <div class="product-img">
+                                    <img class="catergory-img" src="image-other/soft-drinks.png" alt="">
+                                </div>
+                                <div class="catergory-info">Drinks</div>
+                            </a>
+                        </div>
+                    </div>
+            
+                    
+                    <!-- Using a horizontal rule -->
+                    <hr id="groc" class="sectionBreaker">
+                    <h2>Grocery</h2>
+            
+                    <!-- Creating section for item catergory 01 -->
+                    <div id="items-1" class="items">
+                        
+                    </div>
+            
+                    <hr id="veg" class="sectionBreaker">
+                    <h2>Vegetables</h2>
+            
+                     <!-- Creating section for item catergory 02 -->
+                    <div id="items-2" class="items">
+                        
+                    </div>
+            
+                    <hr id="meat" class="sectionBreaker">
+                    <h2>Meat</h2>
+            
+                     <!-- Creating section for item catergory 03 -->
+                    <div id="items-3" class="items">
+                        
+                    </div>
+            
+                    <hr id="drinks" class="sectionBreaker">
+                    <h2>Drinks</h2>
+            
+                     <!-- Creating section for item catergory 04 -->
+                    <div id="items-4" class="items">
+                    
+                    </div>
+                </div>    
+            
+            
+                <!-- Creating the checkout cart -->
+                <div class="cartArea">
+                    <h2>Checkout Menu</h2>
+                    
+            
+                    <!-- Creating a section to show cart items -->
+                    <div class="items-cart">
+            
+                    </div>
+            
+                    <!-- Creating a section to shwo total -->
+                    <div class="total-cart">
+            
+                    </div>
+            
+                    <!-- Creating buttons to close and open window -->
+                    <div class="buttons">
+                        <button id="check" class="button">Checkout</button>
+                        <button id="close" class="button">Close</button>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+
+        <!-- Showing the page editor -->
+        <h3 class="page-editor">Page Editor || Wathila Karunathilake</h3>
+
+
+        <!-- Footer -->
+        <div class="footer-container">
+            <!-- Left Section -->
+            <div class="footer-section-left">
+                <div class="footer-title"> Get connected</div>
+
+                <div class="footer-description">
+                    Join the conversation on social, and
+                    stay connected with our latest events
+                    and partners around the world
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="social-media-logo-container">
+                    <img src="../Others/img/twitter-logo.png" alt="twitter-logo" class="socialimage">
+                    <img src="../Others/img/facebook-logo.png" alt="fb-logo" class="socialimage">
+                    <img src="../Others/img/insta-logo.png" alt="insta-logo" class="socialimage">
+                    <img src="../Others/img/youtube-logo.png" alt="youtube-logo" class="socialimage">
+                </div>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="footer-section-middle">
+                <div class="footer-title"> Contact</div>
+
+                <div class="footer-description" id="footer-description-id-1">
+                    <img src="../Others/img/address-logo.png" alt="address" class="addressimage">
+                    <div>
+                        213/8/9, Mount Lavinia Road,<br>
+                        Sri Lanka
+                    </div>
+                </div>
+
+                <div class="footer-description" id="footer-description-id-2">
+                    <img src="../Others/img/msg-logo.png" alt="msg-logo" class="addressimage">
+                    <div>zerohunger@gmail.com</div>
+                </div>
+
+                <div class="footer-description" id="footer-description-id-3">
+                    <img src="../Others/img/call-logo.png" alt="call-logo" class="addressimage">
+                    <div>0785864540 | 0770891499</div>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-section-right">
+                <div class="footer-title"> Stay informed</div>
+
+                <div class="footer-description">
+                    Subscribe to our newsletter to receive
+                    updates of latest news and events.
+                </div>
+
+                <!-- Subscription Form -->
+                <form action="http://localhost" class="form-details">
+                    <input id="subscribe-newsletter" style="box-shadow: none;" type="email" name="subscribe" required>
+                    <span class="subscribe-placeholder">Email :</span>
+                    <button class="sub-button" type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Linking the java script -->
+        <script src="shop.js"></script>
+
+    </body>
+
+</html>
+
+
+

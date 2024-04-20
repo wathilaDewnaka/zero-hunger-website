@@ -1,0 +1,198 @@
+<!-- Creating the html document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Creating the relavent meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+
+    <!-- External CSS files for styling -->
+    <link rel="stylesheet" href="../Others/nav-bar-and-footer.css">
+    <link rel="stylesheet" href="splash.css">
+
+    <!-- Linking to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="icon" type="image/x-icon" href="../Others/img/leaf-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+
+            <!-- Navigation Link Container -->
+            <div class="nav-link-container">
+                <!-- Site Name -->
+                <div class="site-name">
+                    Zero Hunger
+                </div>
+
+                <!-- Logo -->
+                <img src="../Others/img/leaf-logo.png" alt="leaf-logo" class="leaf-logo">
+
+                <!-- Navigation Links -->
+                <ul class="nav-links">
+                    <li class="active-nav-link"><a href="../Home/home.html">Home</a></li>
+                    <li><a href="../Content-Page/content-page.html">Content Page</a></li>
+                    <li><a href="../Feedback-Form/feedback.html">Form</a></li>
+                    <li><a href="../Gallery/gallery.html">Gallery</a></li>
+                    <li><a href="../Shop/shop.html">Shop</a></li>
+                    <li><a href="../User-Profile/profile.html">User Profile</a></li>
+                    <li><a href="../Sitemap/sitemap.html">Site Map</a></li>
+                    <li><a href="../Team/team.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Document main container -->
+        <div class="container">  
+            <!-- Video splash screen -->
+            <!-- Sections with mission and vision statements -->
+            <!-- Section with group members -->  
+
+            <video autoplay muted loop id="introVideo">
+                <source src="img/video-splash.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video> 
+            
+            <!-- Section for mission and vision -->
+            <div class="section-one">
+                <div class="mission-vision">
+                    <div class="mission">
+                        <h1>Our Mission</h1>
+                        <p>Our mission is to combat hunger and address food insecurity by empowering individuals and organizations to contribute to the reduction of hunger through the donation of nutritious food items. We strive to create a platform that facilitates seamless and impactful donations, fostering a sense of community and collective responsibility in the fight against hunger.</p>
+                    </div>
+                
+                    <div class="vision">
+                        <h1>Our Vision</h1>
+                        <p>Our vision is a world where every individual has access to an ample supply of nutritious food, regardless of their circumstances. We envision a future where hunger is a relic of the past, achieved through the concerted efforts of compassionate individuals and organizations utilizing our platform. We aim to be at the forefront of this global movement, serving as a beacon of hope and a catalyst for lasting change in the quest for a hunger-free world.</p>
+                    </div>
+                </div>
+            </div>  
+
+            <!-- Adjusting another section to show group members -->
+            <div class="section-two">
+                <h1 id="grp-mem" >Group Members</h1>
+                <div class="student-details">
+
+                    <!-- Showing student  with image -->
+                    <div class="student">
+                        <div class="student-img">
+                            <img src="img/wathila.jpeg" alt="student-1">
+                        </div>
+                        <h2>Wathila Karunathilake</h2>
+                        <p>W2052736</p>
+                    </div>
+
+                    <!-- Showing student  with image -->
+                    <div class="student">
+                        <div class="student-img">
+                            <img src="img/thareen.jpeg" alt="student-2">
+                        </div>
+                        <h2>Thareen Vidanaarachi</h2>
+                        <p>W2052701</p>
+                    </div>
+
+                    <!-- Showing student  with image -->
+                    <div class="student">
+                        <div class="student-img">
+                            <img src="img/thejana.jpg" alt="student-3">
+                        </div>
+                        <h2>Thejana Wetthasinghe</h2>
+                        <p>W2052724</p>
+                    </div>
+
+                    <!-- Showing student  with image -->
+                    <div class="student">
+                        <div class="student-img">
+                            <img src="img/shuaib.jpeg" alt="student-4">
+                        </div>
+                        <h2>Shauib Mursaleen</h2>
+                        <p>W2052722</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        <!-- Creating the loading animation -->
+        <div class="loading-animation">
+            <div class="loader"></div>
+            <p id="loading-text">Redirecting to Home Page</p>
+        </div>
+
+        <!-- Showing the page editor -->
+        <h3>Page Editor || Wathila Karunathilake</h3>
+
+        <!-- Footer -->
+        <div class="footer-container">
+            <!-- Left Section -->
+            <div class="footer-section-left">
+                <div class="footer-title"> Get connected</div>
+
+                <div class="footer-description">
+                    Join the conversation on social, and
+                    stay connected with our latest events
+                    and partners around the world
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="social-media-logo-container">
+                    <img src="../Others/img/twitter-logo.png" alt="twitter-logo" class="socialimage">
+                    <img src="../Others/img/facebook-logo.png" alt="fb-logo" class="socialimage">
+                    <img src="../Others/img/insta-logo.png" alt="insta-logo" class="socialimage">
+                    <img src="../Others/img/youtube-logo.png" alt="youtube-logo" class="socialimage">
+                </div>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="footer-section-middle">
+                <div class="footer-title"> Contact</div>
+
+                <div class="footer-description" id="footer-description-id-1">
+                    <img src="../Others/img/address-logo.png" alt="address" class="addressimage">
+                    <div>
+                        213/8/9, Mount Lavinia Road,<br>
+                        Sri Lanka
+                    </div>
+                </div>
+
+                <div class="footer-description" id="footer-description-id-2">
+                    <img src="../Others/img/msg-logo.png" alt="msg-logo" class="addressimage">
+                    <div>zerohunger@gmail.com</div>
+                </div>
+
+                <div class="footer-description" id="footer-description-id-3">
+                    <img src="../Others/img/call-logo.png" alt="call-logo" class="addressimage">
+                    <div>0785864540 | 0770891499</div>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-section-right">
+                <div class="footer-title"> Stay informed</div>
+
+                <div class="footer-description">
+                    Subscribe to our newsletter to receive
+                    updates of latest news and events.
+                </div>
+
+                <!-- Subscription Form -->
+                <form action="http://localhost" class="form-details">
+                    <input id="subscribe-newsletter" style="box-shadow: none;" type="email" name="subscribe" required>
+                    <span class="subscribe-placeholder">Email :</span>
+                    <button class="sub-button" type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Linking the java script for splash screen -->
+        <script src="splash.js"></script>
+        
+    </body>
+
+</html>
+
+
+

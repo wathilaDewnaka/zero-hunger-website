@@ -1,0 +1,40 @@
+.content-page,.gallery{
+    text-align: center;
+    font-size: larger;
+    line-height: 40px;
+
+}
+
+.contents{
+    margin: auto;
+    width: 80%;
+}
+
+h3{
+    text-align: center;
+}
+
+.floater{
+    float: left;
+    height: 300px;
+    width: auto;
+    padding: 20px;
+}
+
+.images{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.images img{
+    margin-top: 20px;
+    width: 250px;
+    height: auto;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}

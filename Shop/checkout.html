@@ -1,0 +1,153 @@
+<!-- Creating the html document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    
+    <!-- Linking font and css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="checkout.css">
+	<link rel="icon" type="image/x-icon" href="../Others/img/leaf-logo.png">
+</head>
+<body>
+    <h2 id="centere">Checkout Page</h2>
+    <!-- Using form for bill details -->
+    <form id="checkoutForm">
+        <div class="container">
+            <div class="customer-details">
+                <h3>Billing Details</h3>
+
+                <!-- Showing text by labels -->
+                <!-- Gather inputs -->
+                <div class="input-group">
+                    <label for="firstName">Full Name :</label>
+                    <input type="text" id="fullName" placeholder="Wathila Karunathilake">
+                    <div class="error-message" id="fullNameError"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" placeholder="wathila.20220955@iit.ac.lk">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="phoneNumber">Phone Number :</label>
+                    <input type="tel" id="phoneNumber" placeholder="+94 77 089 1499">
+                    <div class="error-message" id="phoneNumberError"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="address">Address :</label>
+                    <input type="text" id="address" placeholder="Enter your address">
+                    <div class="error-message" id="addressError"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="city">City :</label>
+                    <input type="text" id="city" placeholder="Enter your city">
+                    <div class="error-message" id="cityError"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="district">District :</label>
+                    <input type="text" id="district" placeholder="Enter your district">
+                    <div class="error-message" id="districtError"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="postalCode">Postal Code :</label>
+                    <input type="number" id="postalCode" placeholder="Enter your postal code">
+                    <div class="error-message" id="postalCodeError"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="paymentMethod">Payment Method :</label>
+                    <select id="paymentMethod" name="paymentMethod">
+                        <option value="">Select Payment Method</option>
+                        <option value="creditCard">Credit Card / Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                    <div class="error-message" id="paymentMethodError"></div>
+                </div>   
+                
+                <h3 id="totalShow"></h3>
+
+                <div class="validate-message"></div>
+            </div>
+
+            <div class="payment-details" style="display: none;">
+                <h3>Card Payment</h3>
+
+                <div class="input-group">
+                    <span>Card Types</span>
+                    <img src="image-other/card_img.png" alt="">
+                </div>
+
+                <div class="input-group">
+                    <label for="nameCard">Name on Card :</label>
+                    <input type="text" id="nameCard" placeholder="Mr. Wathila Karunathilake">
+                    <div class="error-message" id="nameCardError"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="cardNumber">Credit Card Number :</label>
+                    <input type="number" id="cardNumber" placeholder="1111-2222-3333-4444">
+                    <div class="error-message" id="cardNumberError"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="expMonth">Exp Month :</label>
+                    <input type="text" id="expMonth" placeholder="January">
+                    <div class="error-message" id="expMonthError"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="CVV">CVV:</label>
+                    <input type="number" id="CVV" placeholder="123">
+                    <div class="error-message" id="CVVError"></div>
+                </div>
+            </div>
+
+            <div class="paypal-details" style="display: none;">
+                <h3>PayPal Payment</h3>
+
+                <div class="input-group">
+                    <label for="ppemail">PayPal Email Address :</label>
+                    <input type="email" id="ppemail" placeholder="Enter your paypal email">
+                    <div class="error-message" id="paypalError"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="pppassword">PayPal Password :</label>
+                    <input type="password" id="pppassword" placeholder="Enter your password">
+                    <div class="error-message" id="passwordError"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="ppAddress">Billing Addresss :</label>
+                    <input type="text" id="billAddress" placeholder="Enter your billing address">
+                    <div class="error-message" id="billingError"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="billingpostalCode">Billing Postal Code :</label>
+                    <input type="number" id="billingpostalCode" placeholder="Enter your billing postal code">
+                    <div class="error-message" id="billingCodeError"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit form -->
+        <input type="submit" value="Proceed to Checkout" class="submit-btn">    
+
+    </form>
+    
+    <h3 class="page-editor">Page Editor || Wathila Karunathilake</h3>
+
+    <!-- Linking the script -->
+    <script src="checkout.js"></script>
+</body>
+</html>

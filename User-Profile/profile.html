@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for characters and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>User Profile</title>
+    <!-- Linking external CSS files -->
+    <link rel="stylesheet" href="../Others/nav-bar-and-footer.css">
+    <link rel="stylesheet" href="profile.css">
+
+    <!-- Linking Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="icon" type="image/x-icon" href="../Others/img/leaf-logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+
+        <!-- Navigation Link Container -->
+        <div class="nav-link-container">
+            <!-- Site Name -->
+            <div class="site-name">
+                Zero Hunger
+            </div>
+
+            <!-- Logo -->
+            <img src="../Others/img/leaf-logo.png" alt="leaf-logo" class="leaf-logo">
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="../Home/home.html">Home</a></li>
+                <li><a href="../Content-Page/content-page.html">Content Page</a></li>
+                <li><a href="../Feedback-Form/feedback.html">Form</a></li>
+                <li><a href="../Gallery/gallery.html">Gallery</a></li>
+                <li><a href="../Shop/shop.html">Shop</a></li>
+                <li class="active-nav-link"><a href="../User-Profile/profile.html">User Profile</a></li>
+                <li><a href="../Sitemap/sitemap.html">Site Map</a></li>
+                <li><a href="../Team/team.html">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+<!-- Form sections for user profile -->
+    <div id="question-1" class="question clean-box">
+        <!-- Step 1 -->
+        <h2>Step 1</h2>
+        <h3>Personal Details</h3>
+
+        <!-- Input field for name -->
+        <label class="custom-field" for="question1">
+            <input type="text" id="question1" name="name" required>
+            <span class="placeholder">Name</span>
+        </label>
+        <!-- Error message for name input -->
+        <span id="required1" class="required" style="display: flex">Please enter name to continue</span>
+
+        <hr>
+        <!-- Buttons to proceed or skip -->
+        <button class="form-button" onclick="nextQuestion(1)">Next</button>
+    </div>
+
+
+    <div id="question-2" class="question clean-box" style="display: none;">
+        <!-- Step 1 -->
+        <h2>Step 1</h2>
+        <h3>Personal Details</h3>
+
+        <!-- Input field for surname -->
+        <label class="custom-field" for="question2">
+            <input type="text" id="question2" name="surname" required>
+            <span class="placeholder">Surname</span>
+        </label>
+
+        <!-- Error message for surname input -->
+        <span id="required2" class="required" style="display: flex">Please enter surname to continue</span>
+
+        <hr>
+        <!-- Buttons to proceed or skip -->
+        <button class="form-button" onclick="nextQuestion(2)">Next</button>
+        <button class="form-button" onclick="skip(2)">Skip</button>
+    </div>
+
+    <div id="question-3" class="question clean-box" style="display: none">
+        <!-- Step 1 -->
+        <h2>Step 1</h2>
+        <h3>Personal Details</h3>
+
+        <!-- Input field for age -->
+        <label class="custom-field" for="question3">
+            <input type="number" id="question3" name="age" required>
+            <span class="placeholder">Age</span>
+        </label>
+
+        <!-- Error message for age input -->
+        <span id="required3" class="required" style="display: flex">Please enter valid age to continue</span>
+
+        <hr>
+        <!-- Buttons to proceed or skip -->
+        <button class="form-button" onclick="nextQuestion(3)">Next</button>
+        <button class="form-button" onclick="skip(3)">Skip</button>
+    </div>
+
+    <div id="question-4" class="question clean-box" style="display: none;">
+        <!-- Step 1 -->
+        <h2>Step 1</h2>
+        <h3>Personal Details</h3>
+
+        <!-- Select field for gender -->
+        <label  class="custom-field" for="question4">
+            <select id="question4" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <span class="placeholder">Gender</span>
+        </label>
+
+        <!-- Error message for selecting gender -->
+        <span id="required4" class="required" style="display: flex">Please select your gender to continue</span>
+
+        <hr>
+        <!-- Buttons to proceed or skip -->
+        <button class="form-button" onclick="nextQuestion(4)">Next</button>
+        <button class="form-button" onclick="skip(4)">Skip</button>
+    </div>
+
+    <div id="question-5" class="question clean-box" style="display: none;">
+        <!-- Step 1 -->
+        <h2>Step 1</h2>
+        <h3>Personal Details</h3>
+
+        <!-- Checkbox for terms and conditions -->
+        <input style="box-shadow: none; position: relative; top: 3px;" type="checkbox" id="question5" name="agree-terms">
+        <label for="question5">Agree to terms & conditions</label>
+
+        <!-- Error message for selecting gender -->
+        <span id="required5" class="required" style="display: flex">Must agree to terms and conditions</span>
+
+        <hr>
+
+        <!-- Button to proceed without skipping -->
+        <button class="form-button" onclick="nextQuestion(5)">Next</button>
+
+    </div>
+
+    <div id="question-6" class="question clean-box" style="display: none">
+        <!-- Step 2 -->
+        <h2>Step 2</h2>
+        <h3>Contact Details</h3>
+
+        <!-- Input field for email -->
+        <label  class="custom-field" for="question6">
+            <input type="email" id="question6" name="email" required>
+            <span class="placeholder">Email</span>
+        </label>
+        <!-- error for email input -->
+        <span id="required6" class="required" style="display: flex">Please enter email to continue</span>
+
+        <hr>
+        <!-- Buttons to proceed or skip -->
+        <button class="form-button" onclick="nextQuestion(6)">Next</button>
+        <button class="form-button" onclick="skip(6)">Skip</button>
+    </div>
+
+    <div id="question-7" class="question clean-box" style="display: none;">
+        <!-- Step 2 -->
+        <h2>Step 2</h2>
+        <h3>Contact Details</h3>
+
+        <!-- Input field for phone number -->
+        <label class="custom-field" for="question7">
+            <input type="tel" id="question7" name="telephone" required>
+            <span class="placeholder">Telephone</span>
+        </label>
+
+        <!-- Error message for phone input -->
+        <span id="required7" class="required" style="display: flex">Please enter phone number to continue</span>
+
+        <hr>
+        <!-- Buttons to proceed or skip -->
+        <button class="form-button" onclick="nextQuestion(7)">Next</button>
+    </div>
+
+    <div id="question-8" class="question clean-box" style="display: none;">
+        <!-- Step 3 -->
+        <h2>Step 3</h2>
+        <h3>Personal information</h3>
+
+        <!-- Input field for hobbies -->
+        <label class="custom-field" for="question8">
+            <input type="text" id="question8" name="hobbies" required>
+            <span class="placeholder">Hobbies related to charity</span>
+        </label>
+        <!-- Error message for hobbies input -->
+        <span id="required8" class="required" style="display: flex">Please enter a hobby to continue</span>
+
+        <hr>
+        <!-- Buttons to proceed or skip -->
+        <button class="form-button" onclick="nextQuestion(8)">Next</button>
+        <button class="form-button" onclick="skip(8)">Skip</button>
+    </div>
+
+    <div id="question-9" class="question clean-box" style="display: none;">
+        <!-- Step 3 -->
+        <h2>Step 3</h2>
+        <h3>Personal information</h3>
+
+        <!-- select field for experience -->
+        <label class="custom-field" for="question9">
+            <select id="question9" name="experience" required>
+                <option value="">Select</option>
+                <option value="New">New</option>
+                <option value="1-5 Years">1-5 Years</option>
+                <option value="5-10 Years or More">5-10 Years</option>
+                <option value="Over 10 Years">Over 10 Years</option>
+            </select>
+            <span class="placeholder">How long have you been doing charity?</span>
+        </label>
+        <!-- Error message for experience selection -->
+        <span id="required9" class="required" style="display: flex">Please select an option to continue</span>
+
+        <hr>
+        <!-- Buttons to proceed or skip -->
+        <button class="form-button" onclick="nextQuestion(9)">Next</button>
+        <button class="form-button" onclick="skip(9)">Skip</button>
+    </div>
+
+    <div id="question-10" class="question clean-box" style="display: none;">
+        <!-- Step 3 -->
+        <h2>Step 3</h2>
+        <h3>Personal information</h3>
+
+        <!-- select field for events -->
+        <label class="custom-field" for="question10">
+            <select id="question10" name="events" required>
+                <option value="">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+            </select>
+            <span class="placeholder">Would you be interested in hosting events with us</span>
+        </label>
+        <!-- Error message for experience selection -->
+        <span id="required10" class="required" style="display: flex">Please select an option to continue</span>
+
+        <hr>
+        <!-- Buttons to proceed or skip -->
+        <button class="form-button" onclick="nextQuestion(10)">Next</button>
+        <button class="form-button" onclick="skip(10)">Skip</button>
+    </div>
+
+    <div id="question-11" class="question clean-box" style="display: none;">
+        <!-- Step 3 -->
+        <h2>Step 3</h2>
+        <h3>Personal information</h3>
+
+        <!-- select field for events -->
+        <label class="custom-field" for="question11">
+            <select id="question11" name="income" required>
+                <option value="">Select</option>
+                <option value="$0-500">$0-500</option>
+                <option value="$500-2000">$500-2000</option>
+                <option value="More than $2000">Over $2000</option>
+            </select>
+            <span class="placeholder">Income Level</span>
+        </label>
+        <!-- Error message for experience selection -->
+        <span id="required11" class="required" style="display: flex">Please select an option to continue</span>
+
+        <hr>
+        <!-- Buttons to proceed or skip -->
+        <button class="form-button" onclick="nextQuestion(11)">Next</button>
+        <button class="form-button" onclick="skip(11)">Skip</button>
+    </div>
+
+    <div id="question-12" class="question clean-box" style="display: none;">
+        <!-- Step 3 -->
+        <h2>Step 3</h2>
+        <h3>Personal information</h3>
+
+        <!-- select field for events -->
+        <label class="custom-field" for="question12">
+            <select id="question12" name="communication" required>
+                <option value="">Select</option>
+                <option value="Call">Call</option>
+                <option value="SMS">SMS</option>
+                <option value="Email">Email</option>
+            </select>
+            <span class="placeholder">Preferred Method of Communication</span>
+        </label>
+        <!-- Error message for experience selection -->
+        <span id="required12" class="required" style="display: flex">Please select an option to continue</span>
+
+        <hr>
+        <!-- Buttons to proceed or skip -->
+        <button class="form-button" onclick="nextQuestion(12)">Next</button>
+    </div>
+
+
+    <!-- Progress bar for profile completion -->
+    <p class="progress">Profile Completion :</p>
+    <div id="progress-bar">
+        <div id="progress-indicator" style="width: 0;"></div>
+    </div>
+
+
+    <!-- Container for profile details -->
+    <div id="profile-details" class="clean-box">
+        <h3>Profile Details</h3>
+    </div>
+
+
+    <!-- Container for skipped questions -->
+    <div id="skip" class="clean-box">
+        <h3>Skipped Questions</h3>
+    </div>
+
+    <h3 class="pageeditor">Page Editor || Thejana Weththasinghe</h3>
+
+    <!-- Footer -->
+    <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-section-left">
+            <div class="footer-title"> Get connected</div>
+
+            <div class="footer-description">
+                Join the conversation on social, and
+                stay connected with our latest events
+                and partners around the world
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="social-media-logo-container">
+                <img src="../Others/img/twitter-logo.png" alt="twitter-logo" class="socialimage">
+                <img src="../Others/img/facebook-logo.png" alt="fb-logo" class="socialimage">
+                <img src="../Others/img/insta-logo.png" alt="insta-logo" class="socialimage">
+                <img src="../Others/img/youtube-logo.png" alt="youtube-logo" class="socialimage">
+            </div>
+        </div>
+
+        <!-- Middle Section -->
+        <div class="footer-section-middle">
+            <div class="footer-title"> Contact</div>
+
+            <div class="footer-description" id="footer-description-id-1">
+                <img src="../Others/img/address-logo.png" alt="address" class="addressimage">
+                <div>
+                    213/8/9, Mount Lavinia Road,<br>
+                    Sri Lanka
+                </div>
+            </div>
+
+            <div class="footer-description" id="footer-description-id-2">
+                <img src="../Others/img/msg-logo.png" alt="msg-logo" class="addressimage">
+                <div>zerohunger@gmail.com</div>
+            </div>
+
+            <div class="footer-description" id="footer-description-id-3">
+                <img src="../Others/img/call-logo.png" alt="call-logo" class="addressimage">
+                <div>0785864540 | 0770891499</div>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="footer-section-right">
+            <div class="footer-title"> Stay informed</div>
+
+            <div class="footer-description">
+                Subscribe to our newsletter to receive
+                updates of latest news and events.
+            </div>
+
+            <!-- Subscription Form -->
+            <form action="http://localhost" class="form-details">
+                <input id="subscribe-newsletter" style="box-shadow: none;" type="email" name="subscribe" required>
+                <span class="subscribe-placeholder">Email :</span>
+                <button class="sub-button" type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </div>
+
+<script src="profile.js"></script>
+
+</body>
+</html>

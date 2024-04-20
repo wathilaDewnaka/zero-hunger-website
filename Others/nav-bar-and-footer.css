@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000000B0;
+    font-weight: 400;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 999;
+}
+
+.nav-links li {
+    display: inline;
+    padding-right: 50px;
+    color: #000000B0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.nav-links li a {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #1D890C;
+    font-weight: 700;
+}
+
+.nav-links {
+    padding-top: 12px;
+    padding-left: 100px;
+}
+
+.active-nav-link a {
+    color: #1D890C;
+    font-weight: 700;
+}
+
+.nav-link-container {
+    display: flex;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+    box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.2);
+}
+
+.leaf-logo {
+    width: 20px;
+    height: 35px;
+    padding-top: 10px;
+}
+
+.site-name {
+    color: #000000;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    width: 202px;
+    padding: 25px 0px 20px 60px;
+}
+
+.footer-container {
+    background-color: #000000DE;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 440px 440px 440px;
+    margin-top: 110px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 70px;
+}
+
+.footer-section-left {
+    padding: 0px 30px 0px 30px;
+}
+
+.footer-section-middle {
+    padding: 0px 30px 0px 30px;
+}
+
+.footer-section-right {
+    padding: 0px 30px 0px 30px;
+}
+
+.footer-title {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    font-size: 17px;
+    font-weight: 400;
+    display: flex;
+}
+
+.form-details {
+    position: relative;
+    color: #CE7C02;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.form-details input {
+    border: 2px solid #CE7C02;
+    width: 220px;
+    height: 25px;
+    background-color: #000000;
+    color: #e5e0e0;
+    font-size: 12px;
+    font-weight: 275;
+}
+
+.social-media-logo-container img {
+    padding: 25px 10px 0px 10px;
+}
+
+.socialimage {
+    width: 21px;
+    height: 21px;
+}
+
+.addressimage {
+    width: 35px;
+    height: 35px;
+}
+
+.form-details input{
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px solid #000000DE;
+    color: #CE7C02;
+    font-weight: bold;
+    margin-top: 5px;
+    height: 5px;
+    width: 250px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+
+.form-details .subscribe-placeholder {
+    position: absolute;
+    top: calc(70% + 10px);
+    transform: translateY(-100%);
+    left: 10px;
+    cursor: text;
+    color: #CE7C02;
+    transition:
+            top 0.3s ease,
+            font-size 0.3s ease,
+            color 0.3s ease;
+}
+
+.form-details input + .subscribe-placeholder {
+    padding: 0 5px;
+}
+
+.form-details input:valid,
+.form-details input:focus {
+    border-color: #CE7C02;
+    transition-delay: 0.1s;
+}
+
+.form-details input:valid + .subscribe-placeholder,
+.form-details input:focus + .subscribe-placeholder {
+    top: 8px;
+    font-size: 10px;
+    color: #CE7C02;
+}
+
+.sub-button {
+    background: none;
+    position: absolute;
+    left: 40%;
+    top: 100%;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    padding: 0 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 160ms ease-in;
+    color: #CE7C02;
+}
+
+.sub-button:hover {
+    box-shadow: rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px;
+}
+
+/* xl */
+@media (max-width: 1280px) {
+    .nav-links li {
+        display: inline;
+        padding-right: 32px;
+        font-size: 15px;
+    }
+
+    .nav-links {
+        padding-top: 12px;
+        padding-left: 75px;
+    }
+
+    .site-name {
+        font-size: 22px;
+        width: 145px;
+        padding: 25px 0px 20px 60px;
+    }
+
+    .leaf-logo {
+        padding-top: 7px;
+    }
+
+    .main-banner {
+        height: 470px;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 380px 380px 380px;
+        padding-left: 50px;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .nav-links li {
+        display: inline;
+        padding-right: 18px;
+        font-size: 12px;
+    }
+
+    .nav-links {
+        padding-top: 7px;
+        padding-left: 60px;
+    }
+
+    .site-name {
+        font-size: 17px;
+        width: 110px;
+        padding: 20px 0px 15px 42px;
+    }
+
+    .leaf-logo {
+        padding-top: 8px;
+        width: 15px;
+        height: 22px;
+    }
+
+    .main-banner {
+        height: 382px;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        padding-left: 35px;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 300px 300px 300px;
+        padding-left: 80px;
+    }
+}
